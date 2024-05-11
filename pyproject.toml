@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "gyroscope-to-gpx"
+version = "0.1.0"
+description = "Utility for converting Gyroscope places and travels data exports to GPX."
+authors = ["Myles Braithwaite <me@mylesbraithwaite.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+click = "^8.1.7"
+gpx = "^0.2.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.0"
+pytest-cov = "^5.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

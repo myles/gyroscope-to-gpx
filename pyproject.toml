@@ -12,8 +12,24 @@ click = "^8.1.7"
 gpx = "^0.2.1"
 
 [tool.poetry.group.dev.dependencies]
+black = "^24.4.2"
+isort = "^5.13.2"
 pytest = "^8.2.0"
 pytest-cov = "^5.0.0"
+pytest-mypy = "^0.10.3"
+ruff = "^0.4.4"
+
+[tool.poetry.scripts]
+gyroscope-to-gpx = "gyroscope_to_gpx.cli:cli"
+
+[tool.ruff]
+line-length = 80
+
+[tool.black]
+line-length = 80
+
+[tool.isort]
+profile = "black"
 
 [build-system]
 requires = ["poetry-core"]
